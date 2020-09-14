@@ -14,8 +14,8 @@ Landing Page - 1st Project - Udacity -FWD - Professional Web Development - NanoD
     </p>
     <p>
         <strong>
-            I build two versions of this project and they are very similar, and I hope to get a quick look on both of
-            them:
+            I build two versions of this project and they are very similar,
+            and I hope that you get a quick look at both of them:
         </strong>
     </p>
     <ul>
