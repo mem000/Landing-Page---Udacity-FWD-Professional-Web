@@ -14,10 +14,10 @@ Landing Page - 1st Project - Udacity -FWD - Professional Web Development - NanoD
     </p>
     <ul>
         <li>
-            <a href="Landing Page 1.html" target="_blank">Landing Page 1st Version</a>
+            <a href="https://mem000.github.io/Landing-Page--Udacity-FWD-Professional-Web/Landing%20Page%201.html" target="_blank">Landing Page 1st Version</a>
         </li>
         <li>
-            <a href="Landing Page 2.html" target="_blank">Landing Page 2nd Version</a>
+            <a href="https://mem000.github.io/Landing-Page--Udacity-FWD-Professional-Web/Landing%20Page%202.html" target="_blank">Landing Page 2nd Version</a>
         </li>
     </ul>
     <p>
