@@ -1,0 +1,248 @@
+/* ---- Base Rules ---- */
+body {
+  /*background: linear-gradient(
+    0deg,
+    rgba(136, 203, 171, 1) 0%,
+    rgba(0, 13, 60, 1) 100%
+  );*/
+  background-color: black;
+  margin: 0;
+  font-family: "Merriweather", serif;
+  color: #fff;
+}
+/* Typeography General**************/
+h1 {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 3em;
+  margin: 2em 1rem;
+}
+
+@media only screen and (min-width: 35em) {
+  h1 {
+    font-size: 7em;
+    margin: 2em 4rem 1em;
+  }
+}
+
+h2 {
+  border-bottom: 1px solid #cc1;
+  font-family: "Fira Sans", Sans-Serif;
+  font-size: 3em;
+  color: #fff;
+}
+
+p {
+  line-height: 1.6em;
+  color: #eee;
+  text-align: justify;
+  /*margin: 20px;*/
+}
+/* ---- Layout Rules ---- */
+main {
+  margin: 10px 50px;
+}
+
+section {
+  min-height: 600px;
+  border: 1px solid black;
+  border-top: none;
+}
+.main__hero h1:hover,
+.active_section h2 {
+  -webkit-text-stroke: 2px blue; /* width and color */
+}
+/* ---- Theme Rules ---- */
+/* Landing Container Styles */
+.landing__container {
+  padding: 1em;
+  padding-top: 40px;
+  text-align: left;
+  margin: 10px;
+  /*border: 1px solid black;*/
+}
+
+@media only screen and (min-width: 35em) {
+  .landing__container {
+    max-width: 50em;
+    padding: 4em;
+  }
+}
+
+section:nth-of-type(even) .landing__container {
+  margin-right: 0;
+  margin-left: auto;
+  text-align: right;
+}
+/**************************************/
+/*.main__hero {
+  min-height: 600px;
+  padding-top: 40px;
+  border: 1px solid black;
+}
+
+/* page header & footer***********************************************/
+.page__header {
+  /* fixing main header bar while scolling */
+  /*border-bottom: 1px solid black;*/
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+}
+.header_logo {
+  float: left;
+  height: 50px;
+}
+.navbar__menu {
+  float: right;
+}
+
+footer {
+  color: white;
+  border-top: 1px solid black;
+  background-color: black;
+  padding-bottom: 5px;
+  display: inline;
+  /*display: flex;
+  justify-content: center;*/
+}
+.footer_logo {
+  float: left;
+  height: 50px;
+}
+footer p {
+  text-align: center;
+  float: right;
+  margin-right: 50px;
+}
+.mem {
+  color: blue;
+}
+@media all and (max-width: 600px) {
+  .header_logo {
+    display: none;
+    height: 40px;
+  }
+}
+
+@media all and (max-width: 520px) {
+  .header_logo {
+    display: inherit;
+    float: left;
+    height: 40px;
+    padding-top: 80px;
+  }
+}
+/*************************************************************/
+
+.navigation {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navigation .link:hover {
+  background-color: #1565c07a;
+}
+.navigation .active {
+  background-color: #1565c07a;
+}
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-evenly;
+  }
+
+  .navigation li[class="link"]:hover {
+    /*to remove highlight when mouse hover for Tablet and mobile Devices*/
+    background: none;
+  }
+  .navigation li[class="link active"]:hover {
+    /*to keep highlight for active section*/
+    background-color: #1565c07a;
+  }
+  @media all and (max-width: 620px) {
+    .navigation a {
+      font-size: 15px;
+    }
+  }
+}
+
+@media all and (max-width: 520px) {
+  .navigation a {
+    font-size: 20px;
+  }
+
+  .main__hero,
+  .landing__container {
+    padding-top: 200px;
+  }
+
+  .navigation {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+
+  .navigation a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+/*****/
+.active_section {
+  background-color: #1565c07a;
+}
+/*************************************************************/
+/*Scroll to top when arrow up clicked BEGIN*/
+/*
+source: https://html-online.com/articles/dynamic-scroll-back-top-page-button-javascript/
+*/
+/*Scroll Back to Top*/
+#back2Top {
+  width: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  z-index: 999;
+  display: none;
+  cursor: pointer;
+  -moz-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
+}
+#back2Top:hover {
+  background-color: #1565c0;
+  color: #fff;
+  -webkit-text-stroke: 2px blue; /* width and color */
+}
+
+/*************************************************************/
+/*************************************************************/
+/*************************************************************/
