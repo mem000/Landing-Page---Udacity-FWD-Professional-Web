@@ -6,6 +6,13 @@ Landing Page - 1st Project - Udacity -FWD - Professional Web Development - NanoD
     <h1>
         Landing Page - Udacity FWD Professional Web Nanodegree
     </h1>
+    <p> 
+        <strong>
+            The project link on Github Pages:
+        </strong>
+        https://mem000.github.io/Landing-Page-FWD/
+    </p>
+
     <p>
         <strong>
             I build two versions of this project and they are very similar, and I hope to get a quick look on both of
