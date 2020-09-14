@@ -50,12 +50,10 @@ Landing Page - 1st Project - Udacity -FWD - Professional Web Development - NanoD
         </tr>
         <tr>
             <td>
-                &#9830; Scroll to top when arrow up clicked or the paged is reloaded using js and JQuery (Additional
-                Features)
+                &#9830; Scroll to top when arrow up clicked or the paged is reloaded using js only (Additional Features)
             </td>
             <td>
-                &#9830; Scroll to top when arrow up clicked or the paged is reloaded using js and JQuery (Additional
-                Features)
+                &#9830; Scroll to top when arrow up clicked or the paged is reloaded using js and JQuery (Additional Features)
             </td>
         </tr>
         <tr>

@@ -164,33 +164,47 @@ setTimeout(whenClick, 50);
 // when scroll 
 window.addEventListener('scroll', whenScroll, true);
 
-//Additional Features
-/*******************************************************/
-/*Scroll to top when arrow up clicked BEGIN*/
-//source: https://html-online.com/articles/dynamic-scroll-back-top-page-button-javascript/
 
-$(window).scroll(function () {
-    var height = $(window).scrollTop();
-    if (height > 100) {
-        $("#back2Top").fadeIn();
+/*******************************************************/
+/*******************************************************/
+/*******************************************************/
+//Additional Features (Pure JS)
+/*******************************************************/
+/*Scroll to top when arrow up clicked BEGIN*/ //(Pure JS)
+
+const backToTop = document.querySelector("#back2Top");
+//backToTop.setAttribute('href', '#');
+
+window.addEventListener('scroll', function () {
+    var height = window.pageYOffset;
+    if (height > 150) {
+        backToTop.style.display = 'block';
     } else {
-        $("#back2Top").fadeOut();
+        backToTop.style.display = 'none';
     }
 });
-$(document).ready(function () {
-    $("#back2Top").click(function (event) {
-        event.preventDefault();
-        $("html, body").animate({ scrollTop: 0 }, "slow");
-        return false;
-    });
-});
+
+//https://stackoverflow.com/questions/15935318/smooth-scroll-to-top
+const smoothValue = 15;
+const scrollToTop = () => {
+    const c = document.documentElement.scrollTop || document.body.scrollTop;
+    if (c > 0) {
+        window.requestAnimationFrame(scrollToTop);
+        window.scrollTo(0, c - c / smoothValue);
+        /*
+            Tip: for slower motion of the scrolling, increase the 'smoothValue'. 
+            The bigger the number - the smoother / slower the scrolling.
+        */
+    }
+};
+
+backToTop.addEventListener('click',
+    scrollToTop
+    //window.scrollTo({ top: 0, behavior: "smooth" });
+);
+
 /*Scroll to top when arrow up clicked END*/
 /*******************************************************/
-/*Scroll to top when reloading the page */
-
-$(window).on('load', function (event) {
-    event.preventDefault();
-    $("html, body").animate({ scrollTop: 0 }, "slow");
-    return false;
-});
-  /*******************************************************/
+/*Scroll to top when reloading the page (Pure JS)*/
+window.addEventListener('load', scrollToTop);
+/*******************************************************/
