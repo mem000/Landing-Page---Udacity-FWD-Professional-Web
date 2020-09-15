@@ -68,7 +68,7 @@ section {
   padding-top: 20px;
   padding-bottom: 10px;
 }
-@media all and (max-width: 500px) {
+@media all and (max-width: 530px) {
   section {
     padding-top: 70px;
   }

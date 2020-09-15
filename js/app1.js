@@ -122,7 +122,7 @@ function whenClick() {
             menu_Link.classList.add('active'); //add 'active' class to the current active link
 
             // Scroll to section on link click 
-            sections[i].scrollIntoView(); //this can be used instead of 'href=#${sectionId}` to scroll to the specified section
+            sections[i].scrollIntoView({ behavior: "smooth" }); //this can be used instead of 'href=#${sectionId}` to scroll to the specified section
             removeActiveClassFromSection(); //remove 'active_section' class from the previous active section
             sections[i].classList.add('active_section'); //add 'active_section' class to the current active section
         }
@@ -185,7 +185,7 @@ window.addEventListener('scroll', function () {
 });
 
 //https://stackoverflow.com/questions/15935318/smooth-scroll-to-top
-const smoothValue = 15;
+const smoothValue = 10;
 const scrollToTop = () => {
     const c = document.documentElement.scrollTop || document.body.scrollTop;
     if (c > 0) {
