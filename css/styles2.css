@@ -1,4 +1,9 @@
 /* ---- Base Rules ---- */
+html {
+  /*to enable smooth scrolling for the whole page*/
+  scroll-behavior: smooth;
+}
+
 body {
   /*background: linear-gradient(
     0deg,
