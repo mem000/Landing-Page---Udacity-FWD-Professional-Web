@@ -23,7 +23,7 @@ Landing Page - 1st Project - Udacity - FWD - Professional Web Development - Nano
             <a href="https://mesmatmm.github.io/Landing-Page-FWD/LandingPage1.html" target="_blank">Landing Page 1st Version</a>
         </li>
         <li>
-            <a href="https://mem000.github.io/Landing-Page-FWD/LandingPage2.html" target="_blank">Landing Page 2nd Version</a>
+            <a href="https://mesmatmm.github.io/Landing-Page-FWD/LandingPage2.html" target="_blank">Landing Page 2nd Version</a>
         </li>
     </ul>
     <p>
